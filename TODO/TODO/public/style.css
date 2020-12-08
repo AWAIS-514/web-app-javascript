@@ -1,0 +1,75 @@
+body
+{
+    background-image: url(link/1.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+background-color: rgb(128,0,0,0.9)	;
+   
+}
+.maindiv{
+    width: 400px;
+     height: 400px; 
+     opacity: 0.7; 
+    background-color: white; 
+    margin-left: auto;
+     margin-right: auto; 
+     position: relative
+}
+@media only screen and (max-width: 600px) {
+   .maindiv{
+    width: 300px;
+   }
+  
+  }
+input{
+    background-color: black;
+    opacity: 0.5;
+    font-size: larger;
+    color: rgb(192, 227, 231) ;
+    height: 50px;
+    font-style: oblique;
+}
+.btn{
+
+    position: relative;
+    font-size: 20px;
+     text-align: center;
+      background-color:rgb(128,0,0,0.5);
+   height: 50px;
+   width: 200px;
+  border-radius: 50px 50px 50px 50px ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .btnjava{
+       background-color: blue;
+    }
+   }
+#chng{
+
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.abc{
+    font-size: 25px ;
+    color: rgb(0, 0, 0);
+   margin-top: 50px;
+    margin-left:50px;
+    list-style:none;
+
+
+}
+.btnjava{
+    width: 80px;
+    height: 30px;
+  
+    background-color: rgba(231, 127, 150, 0.253);
+border-radius:  70px 70px 70px 70px ;
+ 
+}

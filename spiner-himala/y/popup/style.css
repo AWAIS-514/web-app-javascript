@@ -1,0 +1,140 @@
+
+
+*{
+	
+	margin:0;
+}
+
+.login-popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1099;
+	background-color:rgba(0,0,0,0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease;
+}
+.login-popup.show{
+	visibility:visible;
+	opacity: 1;
+}
+.login-popup .box{
+	background-color:#ffffff00;
+	
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: 30%;
+	margin-top: -20%;
+	border: 10px solid rgb(124, 19, 19);
+	transform:translate(-50%,-50%);
+
+	opacity: 0;
+	margin-left: 50px;
+	transition: all 1s ease;
+
+}
+.login-popup.show .box{
+	opacity: 1;
+	margin-left: 0;
+}
+
+
+.login-popup .box .img-area .img{
+	position: absolute;
+	left:0;
+	top:0;
+	
+	background-image: url('img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	animation: zoomInOut 7s linear infinite;
+	z-index: -1;
+
+}
+@keyframes zoomInOut{
+	0%,100%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+}
+.login-popup .box .form{
+	
+	max-width: 50%;
+	padding:100px 100px;
+}
+
+
+.login-popup .box .form .form-control{
+	height: 80px !important;
+	margin-top: 30px;
+	margin-left: 40%;
+	width: 450px;
+	border:none;
+	border-bottom:1px solid #cccccc;
+	font-size: 15px;
+	
+}
+.login-popup .box .form .form-control:focus{
+	outline: none;
+}
+.login-popup .box .form label{
+	font-size: 15px;
+	color:#555555;
+}
+.login-popup .box .form .btn{
+	
+	background-color: #E91E63;
+	margin-top:80px;
+	height: 45px;
+	border:none;
+	border-radius: 25px;
+	margin-left: 100px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color:#ffffff;
+	cursor: pointer;
+}
+.login-popup .box .form .btn:focus{
+	outline: none;
+}
+
+.login-popup .box .form .close{
+	position: absolute;
+	right: 10px;
+	top:0px;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+	
+	.login-popup .box .img-area{
+		display: none;
+	}
+	
+}
+.mainbox{
+	width: 80%;
+	height: 30%;
+	background-color: rgba(151, 149, 149, 0);
+	margin-top: 35%;
+margin-left: auto;
+margin-right: auto;
+	border: 10px solid rgba(207, 193, 193, 0.39);
+	background-image: url(./1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+
+
+	
+}
+#hide{
+	visibility: visible;
+}

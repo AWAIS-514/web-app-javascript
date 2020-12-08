@@ -1,0 +1,94 @@
+#app {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+.continues{
+  width: 300px;
+  height: 70px;
+  margin-left: 16%;
+  margin-top: 10px;
+  color: aliceblue;
+  font-size: 50px;
+  background-color: rgb(216, 34, 34);
+  border-radius: 40px;
+  outline: none;
+  display: none;
+  position: absolute;;
+}
+
+.marker {
+  position: relative;
+  width: 60px;
+  left: 172px;
+  top: -20px;
+  z-index: 2;
+  margin-top: 15px;
+}
+
+.wheel {
+  width: 700px;
+  height: 700px;
+  margin-left: -40%;
+  margin-top: -70px;
+  
+}
+
+
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+.spino{
+  background-color: white;
+  width: 800px;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-t{
+  background-color: red;
+  color: aliceblue;
+  font-family:"Comic Sans MS";
+margin-left: auto;
+  margin-right:auto ;
+  
+}
+p{
+  font-size: 50px;
+}
+.force{
+  width: 800px;
+  height: 100px;
+  background-color: white;
+  margin-left: -199px;
+  
+
+}
+.button{
+
+position: relative;
+ margin-left: -100px !important;
+}
+.footer{
+  
+  margin-top: 100px;
+  width:100%;
+}

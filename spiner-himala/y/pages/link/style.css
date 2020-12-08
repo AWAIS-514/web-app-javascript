@@ -1,0 +1,135 @@
+
+th{
+    color: rgb(0, 0, 0);
+}
+input{
+    color: rgb(8, 8, 8);
+}
+.submit{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin-top: -30px !important;
+    margin-left: 35%;
+    background-color:black;
+   
+    color: white;
+}
+.header-reg{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 10px;
+}
+/* example of combinator selector (descendant selextor) */
+.header-reg h1,h4{
+    color:black;
+   margin-top: 10px;
+    margin-left:5% ;
+    line-height: 2;  
+}
+.header-reg h4{
+    line-height: -5;
+    margin-left: 15%;
+   padding: 20px;
+}
+/* example of combinator selector (direct child  selector) */
+
+#main select >option{
+background-color:rgba(151, 198, 214, 0.384);
+margin-top: 50px;
+}
+th{
+  
+   text-align: left;
+}
+input{
+   background-color: rgba(217, 226, 230, 0.048);
+    
+    outline: none;
+}
+#register-me{
+    background-color: rgba(121, 138, 132, 0.425);
+}
+#Register{
+    cursor: pointer;
+}
+
+
+/* example of Attribute selector */
+th [target]{
+    background-color: rgba(176, 208, 219, 0.384);
+}
+
+/* example of  Pseudo-class selectors  */
+
+h1:hover{
+    color:bisque;
+}
+.done,.tih{
+    border: 1px solid black;
+    background-color: rgb(233, 231, 231);
+  }
+ 
+.footer{
+     
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     
+ }
+ .deal{
+     width: 90%;
+     height: 90%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .heading
+ {
+     margin-left: 20px;
+ }
+ .mar{
+    font-family: "Lucida Console", "Courier New", monospace;
+ }
+ font{
+    font-size: 15px; 
+ }
+.whitebox{
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height:370px;
+    border: 5px solid rgba(88, 82, 82, 0.253);
+    margin-top: 10px;
+
+}
+#main{
+    margin-left:70px !important;
+    
+}
+#listSt >li{
+    list-style: url("../link/li.png");
+}
+p{
+    margin-left: 60%;
+    color: red;
+    cursor: pointer;
+    margin-bottom: -30px;
+}
+#close{
+    visibility: hidden;
+  
+}
+.bold
+{
+    position: relative; 
+    top: 15px; 
+    border: none; 
+    height: 4px; 
+    background: black; 
+    margin-top: -20px;
+    margin-bottom: -10px;
+
+}

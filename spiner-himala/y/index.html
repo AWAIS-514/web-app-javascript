@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weiben - Wheel of fortune</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./link/styles.css" />
+    <link rel="stylesheet" href="./popup/style.css">
+  </head>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5AYrjpkgybxvb9ZAEd0hve2wKkRVIYOo",
+    authDomain: "spinner-hima.firebaseapp.com",
+    projectId: "spinner-hima",
+    storageBucket: "spinner-hima.appspot.com",
+    messagingSenderId: "866006559404",
+    appId: "1:866006559404:web:7c0d18bdc9d57fb065cd09",
+    measurementId: "G-V4X615T1JW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+  <style>
+    body{
+      background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/129899232_398225751614421_822828291292540839_n.jpg?_nc_cat=104&ccb=2&_nc_sid=ae9488&_nc_ohc=VuyPLN84sYoAX8rZlC5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=6&oh=4161b42e26e7273a7b38cf14ec8f11e9&oe=5FF163C4");
+    background-size: 215%;
+
+   
+
+   
+   
+    background-repeat: no-repeat;
+    }
+  </style>
+
+  <body >
+    
+  <div id="hide" class="login-popup">
+   
+    <div class="mainbox">
+       <div class="form">
+         
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <form>
+           <div class="form-group">
+             <input type="text" placeholder="Name" id="name"   style="width: 300px; margin-top: 50px; height: 50px; margin-left: 25%;" class="form-control">
+           </div>
+           <div class="form-group">
+             <input type="number" placeholder="Phone" id="phone" style="width: 300px; margin-top: 50px; height: 50px; margin-left: 25%;"  class="form-control">
+           </div>
+         
+           <button type="button" onclick="sub()" style="height: 40px; width: 100px; margin-top: 10px; margin-left: 300px; color: white; background-color: black;" class="btn">Spin</button>
+         </form>
+       </div>
+   </div>
+ </div>
+<div>
+ 
+</div>
+    <div style="width: 100%;">
+      <img src="./1/logo.png" style="width: 100%;" alt="">
+    </div>
+   <div class="spino">
+     <div class="div-t">
+       <p>Spin and Win Trip for 2 people</p>
+     </div>
+    <div id="app">
+      <img class="marker" src="./pic/marker.png" />
+      <img class="wheel" src="./pic/wheel .png" />
+      <a href="./pages/index.html"><button id="continue" class="continues">Continue</button></a>
+    <div class="iy"></div>
+      <img  class="button"  id="hidei" onclick="chlo()" src="./pic/button.png" />
+    </div>
+    
+            
+  </div>
+
+
+
+
+  <div class="footer"><img style="width: 100%; margin-bottom: 160px; height: 100%;" src="./1/footer.jpg" alt=""></div>
+
+
+   </div>
+  <div style="position: fixed; bottom: 10px;">
+ <img height="120px" width="120px" style="margin-left: 15%;" src="./pic/w.png" alt="">
+<div style="width: 1000px; height: 150px; background-color: rgb(143, 44, 44);">
+  
+
+
+<img style="width: 90px; height: 90px; margin-top: 30px; margin-left: 110px;" src="https://www.searchpng.com/wp-content/uploads/2019/02/Message-PNG-Icon-715x657.png" alt="">
+<img style="width: 90px; height: 90px; margin-top: 30px; margin-left: 110px;" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/whatsapp-512.png" alt="">
+<img style="width: 90px; height: 90px; margin-top: 30px; margin-left: 110px;" src="./pic/2.png" alt="">
+<img style="width: 90px; height: 90px; margin-top: 30px; margin-left: 110px;" src="https://cdn.hipwallpaper.com/i/23/54/z8oyC6.png" alt="">
+</div>
+ </div>
+  </body>
+  <script src="./link/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script></script>
+<script src="./popup/script.js"></script>
+<script>
+  function sub(){
+nam=""
+phon=""
+var nam=document.getElementById("name").value;
+var phon=document.getElementById("phone").value;
+let id={name:nam,phone:phon}
+
+if(name=="" && phon==""){
+ alert("Please Enter Values");
+
+}
+else
+{firebase.database().ref(`/spin`).push(id)
+var hide=document.getElementById("hide").style.visibility="hidden";}
+}
+</script>
+</html>

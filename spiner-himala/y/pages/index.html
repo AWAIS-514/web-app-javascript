@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REgistration</title>
+<link rel="stylesheet" href="./link/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+<script src="./link/app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5AYrjpkgybxvb9ZAEd0hve2wKkRVIYOo",
+    authDomain: "spinner-hima.firebaseapp.com",
+    projectId: "spinner-hima",
+    storageBucket: "spinner-hima.appspot.com",
+    messagingSenderId: "866006559404",
+    appId: "1:866006559404:web:7c0d18bdc9d57fb065cd09",
+    measurementId: "G-V4X615T1JW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+</head>
+<style>
+    body{
+       background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/129899232_398225751614421_822828291292540839_n.jpg?_nc_cat=104&ccb=2&_nc_sid=ae9488&_nc_ohc=VuyPLN84sYoAX8rZlC5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=6&oh=4161b42e26e7273a7b38cf14ec8f11e9&oe=5FF163C4");
+   background-size: 200%;
+
+
+   
+
+   
+
+   
+   
+    background-repeat: no-repeat;
+    }
+  </style>
+<body>
+
+  <div style="position: fixed;  bottom: 10px;">
+    <img height="30px" width="30px" style="margin-left: 5%;" src="./w.png" alt="">
+
+
+
+    <div style="width: 1000px; height: 60px; background-color: rgb(143, 44, 44);">
+  
+
+
+      <img style="width: 35px; height: 35px; margin-top: 10px; margin-left:  40px;" src="https://www.searchpng.com/wp-content/uploads/2019/02/Message-PNG-Icon-715x657.png" alt="">
+      <img style="width: 35px; height: 35px; margin-top: 10px; margin-left: 40px;" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/whatsapp-512.png" alt="">
+      <img style="width: 35px; height: 35px; margin-top: 10px; margin-left: 40px;" src="./2.png" alt="">
+      <img style="width: 35px; height: 35px; margin-top: 10px; margin-left: 40px;" src="https://cdn.hipwallpaper.com/i/23/54/z8oyC6.png" alt="">
+      </div>
+    </div>
+
+
+  <div style="width: 100%;">
+    <img src="./link/logo.png" style="width: 100%;" alt="">
+  </div>
+  <div class="whitebox">
+    <div class="header-reg">
+      <h3 >Confirm Booking </h3>
+  
+     </div>
+  
+
+<div id="main">
+    <table>
+        <tr>
+            <th ><h6>Full Name:</h6></th>
+            <tr></tr>
+            <th><input type="text" id="Fullname" placeholder="Name like 'ali'" ></th>
+        </tr>
+       
+        <tr>
+            <th><h6>Email:</h6></th>
+            <tr></tr>
+            <th><input id="email" type="email"  placeholder="like 123@gmail.com"></th>
+        </tr>
+      
+        <tr>
+            <th><h6>Phone:</h6></th>
+            <tr></tr>
+             <th>
+             
+                  <input type="text" id="no"   placeholder="1234567890">
+             </th>
+          
+        </tr>
+        <tr>
+          <th><h6>Pin Code:</h6></th>
+          <tr></tr>
+           <th>
+           
+                <input type="text" id="pin"   placeholder="As you want">
+           </th>
+        
+      </tr>
+      </table>
+<br>
+<a href="./3rd/index.html" target="block"><button style="margin-top: 3px;"  class="submit" onclick="submit()">continue</button></a>
+
+
+
+</div>
+
+
+</div>
+<br>
+
+<br>
+<hr class="bold">
+<marquee behavior="" direction=""  style=" margin-top: 25px;"><font class="mar" style="font-size: 20px;  color: black; margin-top: 80px;">
+  Any Quries Or Question,s Please Dirct Contact Us Via What,s app</font></marquee>
+  <hr class="bold">
+<div class="deal" >
+<div><img src="./link/item.png"  style="width: 100%; height: 100%;" alt=""></div>
+<h3 class="heading">Shimla Manali Tour Package</h3>
+<font>5N/6D /</font><font style="color: red;">02 Nights Shimla, 03 Nights Manali</font>
+<div class="icons">
+<img src="./link/icon,s.png" style="width: 100%; height: 100%;"  alt="">
+</div>
+<h3>
+  Destinations Covered:
+
+</h3>
+<ul id="listSt">
+  <li>Delhi - Manali - Shimla - Delhi</li>
+  <li>Local Manali Sightseeing</li>
+  
+</ul>
+<p  id="read" onclick="read()">Read more</p>
+<p id="close" onclick="reverse()">close</p>
+
+
+</div>
+
+
+<div class="footer"><img style="width: 100%; height: 100%;" src="./link/footer.jpg" alt=""></div>
+</body>
+
+ 
+</html>
+
+

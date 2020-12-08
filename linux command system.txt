@@ -1,0 +1,33 @@
+uptime 				:to chk time
+whoami  			: to chk name of system
+uname				:to chk name of os
+info			 	:all command chk by ubyuntu
+clear 				:clear anything
+info uname			: all conmmand,s of uname
+uname -s -r- -v
+uname -srv			:pointer to chk commandd of linux
+exit				:to enit
+q				:to quit any thing
+uname --help			:to take help about anything
+pwd				:present working directory
+ls				:to know list
+mkdir				:to make directoery or a folder 
+touch #filename#.txt		:to create file
+echo hello world>index.txt	:to write command
+cat index.txt			:to chk is it write
+echo helloworld>>index.txt	:write
+cat index.txt			:to chk command
+cal				:to print calender
+date		 		:to print date
+sudo -i				 :to goto root(goto admin mode by user mode)
+cd ..				:to goto back folder
+mv  index.txt hello.txt 	:to rename
+rm hello.txt 			:to delete
+rm -rf				:remove forcefully
+lscpu				:in space of dxdiag
+what is df			:identify filespace
+df -h				:detail,s
+type uname			:to get hash 
+type info			:to get has
+which uname			:to get hash
+which vlc			:to know is it installed

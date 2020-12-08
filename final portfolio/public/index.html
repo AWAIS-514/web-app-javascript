@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="link/style.css">
+<style>
+body{
+    background-image: url("link/click/1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+    
+}
+
+
+
+        .box {
+        width: 40%;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 35px;
+        border: 2px solid #fff;
+        border-radius: 20px/50px;
+        background-clip: padding-box;
+        text-align: center;
+        }
+        
+        .button {
+        font-size: 1em;
+        padding: 10px;
+        color: #fff;
+        border: 2px solid #06D85F;
+        border-radius: 20px/50px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        }
+        .button:hover {
+        background: #06D85F;
+        }
+        
+        .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0; 
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        
+        transition: opacity 1000ms;
+        visibility: hidden;
+        opacity: 0;
+        }
+        .overlay:target {
+        visibility: visible;
+        opacity: 1;
+        }
+        
+        .popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 30%;
+        position: relative;
+        transition: all 5s ease-in-out;
+        }
+        
+        .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+        }
+        .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+        }
+        .popup .close:hover {
+        color: #06D85F;
+        }
+        .popup .content {
+        max-height: 30%;
+        overflow: auto;
+        }
+        a:target
+        {
+            background-color: rgb(114, 17, 17);
+        }
+        a:hover{
+          color: #fff;
+          font-size: 20px;
+          
+        }
+        a:active{
+        color: #333;
+
+        }
+        @media screen and (max-width: 700px){
+        .box{
+          margin-top: 50px;
+        width: 70%;
+        }
+        .popup{
+        width: 70%;
+        }
+        }
+
+</style>
+</head>
+<body>
+  <div class="alc">
+    <div id="cntrl">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgba(114, 112, 121, 0.5) !important;">
+            <a class="navbar-brand" href="#">H_M_C</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+              
+                <li class="nav-item active" class="in">
+                  <a class="nav-link" href="#">Welcome to my portfolio<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item"> --> 
+                  <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                <!-- </li> -->
+              </ul>
+            </div>
+          </nav>
+    </div>
+   
+
+    
+<!-- intro -->
+
+<div class="jumbotron jumbotron-fluid"  id="loy" style="height: 150px ;  background-color: rgba(114, 112, 121, 0.5)  !important;">
+  <div class="container ">
+    <h1 class="display-4"><p >Hey! nice to see you.</p></h1> 
+   
+    
+ 
+  
+  </div>
+</div>
+
+
+
+<div class="chng">
+
+
+  <!-- <div id="ca">
+    <div class="sdiv"  >
+   jghj
+   
+    </div>
+   
+   
+   
+   </div> -->
+
+ 
+   <div id="ca">
+    <div class="sdiv"  >
+   <img src="https://miro.medium.com/max/800/1*FRV0qtI-w5bs6p9b6icgxw.png" alt="" class="sdiv" style="height: 300px; ">
+   <p><font style="color: skyblue ; font-size: 25px; ; text-align: center; margin-left: 30px;">Chat app react  </font></p>
+   
+   <p style="color: white; font-size: 20px; text-align: center;">still in working..... soon update</p>
+   <a href=" #"><button onclick="working()" type="button" class="btn btn-outline-success" class="btnc" style="margin-left: 175px; width: 200px; "><font style="font-size: 20px;     ">Visit it....</font></button></a>
+   </div>
+   
+    
+   
+   </div>
+   
+   <div id="ca">
+    <div class="sdiv"  >
+   <img src="link/click/1.png" alt="" class="sdiv" style="height: 300px; ">
+   <p><font style="color: skyblue ; font-size: 25px; ; text-align: center; margin-left: 30px;">web Page Responsive </font></p>
+   
+   <p style="color: white; font-size: 20px; text-align: center;">Make this page responsive using HTML5,CSS3 AND also using bootstrap for mobile</p>
+   <a href="https://responsive-page-93257.web.app/"><button type="button" class="btn btn-outline-success" class="btnc" style="margin-left: 175px; width: 200px; "><font style="font-size: 20px;     ">Visit it....</font></button></a>
+   </div>
+   
+    
+   
+   </div>
+
+   <div id="ca">
+    <div class="sdiv"  >
+   <img src="link/click/todo.png" alt="" class="sdiv" style="height: 300px; ">
+   <p><font style="color: skyblue ; font-size: 25px; ; text-align: center; margin-left: 30px;">Todo Web app</font></p>
+   
+   <p style="color: white; font-size: 20px; text-align: center;">Todo app is a useful tool for your daily task,s we code  it in javascript</p>
+   <a href=" https://todo-7105b.web.app"><button type="button" class="btn btn-outline-success" class="btnc" style="margin-left: 175px; width: 200px; "><font style="font-size: 20px;     ">Visit it....</font></button></a>
+   </div>
+   
+    
+   
+   </div>
+   <div id="ca">
+    <div class="sdiv"  >
+   <img src="link/click/Untitled1.png" alt="" class="sdiv" style="height: 300px; ">
+   <p><font style="color: skyblue ; font-size: 25px; ; text-align: center; margin-left: 30px;">H_M_C HOME PAGE</font></p>
+   
+   <p style="color: white; font-size: 20px; text-align: center;">Awesome Example of Html,CSS,CSS3,Bootstrap check it out for your experience.....</p>
+   <a href=" https://main-214a5.web.app"><button type="button" class="btn btn-outline-success" class="btnc" style="margin-left: 175px; width: 200px; "><font style="font-size: 20px;     ">Visit it....</font></button></a>
+   </div>
+   
+    
+   
+   </div>
+
+
+<div id="ca">
+ <div class="sdiv"  >
+<img src="link/click/Untitled.png" alt="" class="sdiv" style="height: 300px; ">
+<p><font style="color: skyblue ; font-size: 25px; ; text-align: center; margin-left: 30px;">Javascript-Calculator</font></p>
+
+<p style="color: white; font-size: 20px; text-align: center;">This caluclator have functionality to do work like a mannual caluclator and it also give you a awesome GUI</p>
+<a href="https://main-214a5.web.app/java%20script/calculator.html"><button type="button"  class="btn btn-outline-success"  class="btnc" style="margin-left: 175px; width: 200px; "><font style="font-size: 20px;     ">Visit it....</font></button></a>
+</div>
+
+ 
+
+</div>
+
+
+
+
+ 
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="linkbn">
+  <div class="box">
+    <a class="button" style="text-decoration: none; text-emphasis: none; " href="#popup2">ABOUT ME.</a>
+  </div>
+  <div id="popup2" class="overlay">
+  <div class="popup">
+  <h2>I am here</h2>
+  <a class="close" href="#">&times;</a>
+  <div class="content">
+   I am Hassan shahid from pakistan,i can help you to make a looking awesome portfolio,s and web design,s(fully responsive) and functionally working website with javascript,database<br> <br>
+
+
+
+    Services we offer: <br>
+
+    <font style="font-size: 14px;">
+    	HTML <br>
+    	WEBSITE DESIGN <br>
+    	GRAPHIC,S DESIGN <br>
+    	LOGO DESIGN <br>
+    	PHOTOSHOP <br>
+    	JAVASCRIPT <br></font>
+    For contacting me :<br>
+    Gmail:<br>
+    <font style="font-size: 15px;">meet2hassan02@Gmail.com</font><br>
+   Quick contact:<br>
+    ph no=+923047267072
+
+      </div> 
+  </div> 
+  </div>
+</div>
+
+
+
+
+</body>
+<script>
+  function working(){
+    alert("still in working.... update soon!")
+  }
+</script>
+</html>

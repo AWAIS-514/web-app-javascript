@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> caluclator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+
+	<form name="cform">
+<table border="2" height="400" width="300"  align="center"  cellspacing="10"  >
+	
+	<tr >
+		<td colspan="5" height="50" align="center" id="marqu">
+			<font face="Castellar" ><marquee scrollamount="5" onmouseout="start()" onmouseover="stop()" >
+			calculator</marquee>
+			</font>
+			
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<input type="text" name="display" placeholder="enter values " id="input" >
+		</td>
+	</tr>
+	<tr align="center">
+		<td><input type="button"  name="1" value="1" onclick="cform.display.value +='1'  "></td>
+		<td><input type="button"  name="2" value="2" onclick="cform.display.value +='2' "></td>
+		<td><input type="button"  name="3" value="3" onclick="cform.display.value +='3'"></td>
+		<td><input type="button"  name="-" value="-" onclick="cform.display.value +='-'"></td>
+		<td><input type="button"  name="*" value="*" onclick="cform.display.value +='*' "></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button"  name="1" value="4" onclick="cform.display.value+='4'"></td>
+		<td><input type="button"  name="1" value="5" onclick="cform.display.value+='5' "></td>
+		<td><input type="button"  name="1" value="6" onclick="cform.display.value +='6'"></td>
+		<td><input type="button"  name="/" value="/" onclick="cform.display.value +='/'"></td>
+		<td><input type="button"  name="%" value="%" onclick="cform.display.value +=''*100/''"></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button"  name="1" value="7" onclick="cform.display.value +='7' "></td>
+		<td><input type="button"  name="1" value="8" onclick="cform.display.value +='8' "></td>
+		<td><input type="button"  name="1" value="9" onclick="cform.display.value +='9' "></td>
+		<td><input type="button"  name="&" value="&"></td>
+		<td rowspan="2" ><input type="button"  name="+" value="+" id="inputadd"  onclick="cform.display.value +='+'"></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button"  name="c" value="c" onclick="cform.display.value =''"></td>
+		<td><input type="button"  name="r" value="r" onclick="cform.display.value ='' "></td>
+		<td><input type="button"  name="@" value="@" onclick="cform.display.value=eval(cform.display.value)"></td>
+		<td><input type="button"  name="=" value="=" onclick="cform.display.value=eval(cform.display.value)"></td>
+		
+	</tr>
+	
+</table></form>
+</body>
+</html>

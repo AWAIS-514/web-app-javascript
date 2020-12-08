@@ -1,0 +1,38 @@
+#input{
+    background-color:rgb(211, 211, 211);
+    width: 290px;
+    height: 100%;
+    text-align: right;
+}
+td{
+    background-color:lightcyan;
+}
+input{
+    border-radius:5px 0px 5px 0px ;
+    width: 35px;
+    height: 35px;
+    background-color: lightgray;
+    cursor: pointer;
+   
+}
+#inputadd{
+    height: 90px;
+    width: 32px;
+   
+    
+}
+table{
+    line-height: 2;
+    margin-top: 150px;
+    background-attachment: fixed;
+    background-color: lightsteelblue;
+  border-radius:25px 0px 25px 0px ;
+
+}
+body{
+background-attachment: scroll;
+background-color: rgb(188, 204, 224);
+}
+#marqu{
+    border-radius: 5px 5px 5px 5px;
+}
